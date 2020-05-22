@@ -1,4 +1,9 @@
+
+We use this in our build process.  We use the version out on NuGet but thought we should fork it in case it would ever disappear.
+
 # OctoPack Precompile
+
+#
 
 This NuGet package adds an ASP.NET precompile step to the build just before (and only if) OctoPack is called. All the files - which would be packaged by OctoPack - will be copied into an intermediate folder. The ASP.NET compiler will be executed on this intermediate folder creating the precompiled website to be packaged. If there's no nuspec file in the project the build step will generate one to tell OctoPack which files should be packaged. If you have a nuspec file you need to manually change it to include the precompiled website.
 
